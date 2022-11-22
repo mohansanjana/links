@@ -1,0 +1,131 @@
+/* VARIABLES */
+
+:root {
+    --header-height: 3rem;
+
+    /*======= Font and Typography ===== */
+    --body: 4vw;
+    --spacing: 24px;
+    --navname: calc(var(--body)*1.2);
+    --project: calc(var(--body)*2);
+    --name: calc(var(--body)*1.1);
+    --title: calc(var(--body)*7.4);
+
+    /*======= spacing and margins ===== */
+    --coverspacing: calc(var(--spacing)2.625);
+    --projectandname-padding: calc(var(--spacing)*1);
+ 
+   
+
+    /*======= z index ===== */
+   --z-tooltip: 10;
+   --z-fixed: 100;
+
+     /*======= nav ===== */
+
+  }
+  
+  @media (min-width: 767px) {
+    :root {
+    --body: 2vw;
+    --navname: calc(var(--body)*0.6);  
+    --project: calc(var(--body)*2.5);
+    --name: calc(var(--body)*0.8);
+    --title: calc(var(--body)*12);
+    --titleletter-spacing: -0.12em;
+
+    /*======= spacing and margins ===== */
+    --spacing: 40px;
+    --projectandname-padding: calc(var(--spacing)*4.8);
+    --coverspacing: calc(var(--spacing)2.625);
+  
+  }
+}
+
+  /*======= BASE ======= */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #1700A4;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+
+
+
+/*======= nav ======= */
+.bookcover {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0px;
+   flex-wrap: wrap; 
+   align-content: space-around;
+   justify-content: space-between;
+
+}
+
+
+
+/*======= body ======= */
+
+
+
+.projectandname{
+    display: flex;
+    flex-direction: row;
+         
+    justify-content: space-between;
+    align-items: center;
+    
+    position: relative;
+
+    width: auto;
+    left: auto;
+    top: auto;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.project{
+    font-family: 'Recia';
+    font-style: italic;
+    font-weight: 400;
+    font-size: calc(var(--project));
+    line-height: 45px;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'ss03' on;
+    color: #FFFFFF;
+}
+
+.name{
+font-family: 'Recia';
+font-style: italic;
+font-weight: 300;
+font-size: calc(var(--name));
+font-feature-settings: 'ss03' on;
+
+color: #FFFFFF;
+}
+
+.title{
+   display: inherit;
+   justify-content: center;
+   height: 80vh;
+   align-items: center;
+   position: relative;
+   font-family: 'General Sans';
+   font-style: normal;
+   font-weight: 600;
+   font-size: var(--title);
+   letter-spacing: -0.12em;
+   color: #FFFFFF;
+   margin: auto;
+}
+

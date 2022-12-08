@@ -143,11 +143,10 @@ color: #FFFFFF;
 }
 
 .title{
-   --inset--top:    -0.2em; /* Font-dependent! */
-	--inset--bottom: -0.23em;
-	--inset--left:   -0.07em;
-	--inset--right:  -0.06em;
-   display: flow-root; /* Cinch the height. */
+   --inset--top: 2;
+   --inset--bottom: 2;
+   --inset--left: -0.05em;
+   --inset--right: 0.06em;
 	margin-left: var(--inset--left);
 	margin-right: var(--inset--right);
 	width: fit-content; /* Cinch the width. */

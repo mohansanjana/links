@@ -114,19 +114,41 @@ font-feature-settings: 'ss03' on;
 color: #FFFFFF;
 }
 
+.title::before,
+.title::after {
+   content: ''; /* Empty. */
+	display: block;
+	visibility: hidden;
+}
+
+.title::before {
+   margin-left: var(--inset--left);
+ }
+
+.title::after {
+   margin-right: var(--inset--right);
+}
+
 .title{
-  display: inherit;
   justify-content: center;
   height: 80vh;
-  width:fit-content;
   align-items: center;
   position: relative;
   font-family: 'General Sans';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 200;
   font-size: var(--title);
   letter-spacing: -0.12em;
-  overflow-wrap: overflow;
   color: #FFFFFF;
-  margin: auto;
 }
+
+.title{
+   --inset--left:   -0.07em;
+   --inset--right:  -0.06em;
+  display: flow-root;
+  margin-left: var(--inset--left);
+  margin-right: var(--inset--right);
+  width:fit-content;
+}
+
+

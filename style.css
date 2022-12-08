@@ -156,7 +156,7 @@ color: #FFFFFF;
 .vl {
    border-left: 1px solid #02010B;
    height: 100vh;
-   position: absolute;
+   position: relative;
    left: 50%;
    margin-left: -3px;
    top: 0;

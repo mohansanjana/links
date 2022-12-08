@@ -122,11 +122,11 @@ color: #FFFFFF;
 }
 
 .title::before {
-   margin-left: var(--inset--left);
+   margin-top: var(--inset--top);
  }
 
 .title::after {
-   margin-right: var(--inset--right);
+   margin-bottom: var(--inset--bottom);
 }
 
 .title{
@@ -136,19 +136,21 @@ color: #FFFFFF;
   position: relative;
   font-family: 'General Sans';
   font-style: normal;
-  font-weight: 200;
+  font-weight: 600;
   font-size: var(--title);
   letter-spacing: -0.12em;
   color: #FFFFFF;
 }
 
 .title{
-   --inset--left:   -0.07em;
-   --inset--right:  -0.06em;
-  display: flow-root;
-  margin-left: var(--inset--left);
-  margin-right: var(--inset--right);
-  width:fit-content;
+   --inset--top:    -0.2em; /* Font-dependent! */
+	--inset--bottom: -0.23em;
+	--inset--left:   -0.07em;
+	--inset--right:  -0.06em;
+   display: flow-root; /* Cinch the height. */
+	margin-left: var(--inset--left);
+	margin-right: var(--inset--right);
+	width: fit-content; /* Cinch the width. */
 }
 
 

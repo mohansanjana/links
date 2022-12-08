@@ -152,12 +152,13 @@ color: #FFFFFF;
 	width: fit-content; /* Cinch the width. */
 }
 
+@media (min-width: 767px) {
 .vl {
-   border-left: 6px solid green;
-   height: 500px;
+   border-left: 1px solid #02010B;
+   height: 100vh;
    position: absolute;
    left: 50%;
    margin-left: -3px;
    top: 0;
-
+}
 }

@@ -178,7 +178,6 @@ color: #FFFFFF;
    flex-direction: row;
    position: fixed;
    left: 0;
-   background-color: #1700A4;
    height: 4rem;
    align-content: center;
    transition: .4s;

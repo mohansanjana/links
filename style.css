@@ -65,6 +65,7 @@ html{
   flex-wrap: wrap; 
   align-content: space-around;
   justify-content: space-between;
+  position: relative;
 
 }
 
@@ -73,7 +74,9 @@ html{
 /*======= body ======= */
 
 
-
+.contents{
+   position: absolute;
+}
 .projectandname{
    display: flex;
    flex-direction: row;
@@ -160,5 +163,6 @@ color: #FFFFFF;
    left: 50%;
    margin-left: -3px;
    top: 0;
+   z-index: 9;
 }
 }

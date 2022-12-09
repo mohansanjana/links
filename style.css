@@ -160,9 +160,7 @@ color: #FFFFFF;
    border-left: 1px solid #02010B;
    height: 100vh;
    position: relative;
-   left: 50%;
-   margin-left: -3px;
    top: 0;
-   z-index: 9;
+   z-index: -1;
 }
 }

@@ -47,6 +47,8 @@ body{
    padding: 0;
    margin: 0;
    background-color: #1700A4;
+   height: 100%;
+   overflow-y: hidden;
 }
 
 html{
@@ -187,7 +189,6 @@ color: #FFFFFF;
  @media (max-width: 767px) {
    .navbar {
    background-color: #2003D0;
-   height: calc(var(--header-height));
    }
  }
  

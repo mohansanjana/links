@@ -181,6 +181,7 @@ color: #FFFFFF;
    height: 4rem;
    align-content: center;
    transition: .4s;
+   column-gap: 6vw;
  }
  
  .navbar a {

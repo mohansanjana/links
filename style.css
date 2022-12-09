@@ -171,6 +171,17 @@ color: #FFFFFF;
    position: fixed;
    bottom: 0;
    width: 100%;
+   height: calc(var(--header-height));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   position: fixed;
+   left: 0;
+   background-color: #1700A4;
+   height: 4rem;
+   align-content: center;
+   transition: .4s;
  }
  
  .navbar a {

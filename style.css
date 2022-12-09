@@ -6,7 +6,7 @@
    /*======= Font and Typography ===== */
    --body: 4vw;
    --spacing: 24px;
-   --navname: calc(var(--body)*1.2);
+   --navname: calc(var(--body)*1);
    --project: calc(var(--body)*2);
    --name: calc(var(--body)*1);
    --title: calc(var(--body)*7.6);

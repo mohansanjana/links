@@ -9,7 +9,7 @@
    --navname: calc(var(--body)*1);
    --project: calc(var(--body)*2);
    --name: calc(var(--body)*1);
-   --title: calc(var(--body)*7.6);
+   --title: calc(var(--body)*8);
 
    /*======= spacing and margins ===== */
    --coverspacing: calc(var(--spacing)2.625);
@@ -47,8 +47,7 @@ body{
    padding: 0;
    margin: 0;
    background-color: #1700A4;
-   height: 100%;
-   overflow-y: hidden;
+   overflow: hidden;
 }
 
 html{
@@ -189,6 +188,7 @@ color: #FFFFFF;
  @media (max-width: 767px) {
    .navbar {
    background-color: #2003D0;
+   bottom: 0;
    }
  }
  

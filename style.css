@@ -200,6 +200,13 @@ color: #FFFFFF;
    text-decoration: none;
  }
  
+ @media (min-width: 767px) {
+ .navbar a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+}
+ 
  .nav_name1{
    font-family: 'General Sans';
    font-style: normal;
@@ -207,6 +214,8 @@ color: #FFFFFF;
    font-size: var(--navname);
    line-height: 24px;
    color: #FFFFFF;
+   text-decoration-style: wavy;
+   text-decoration-color: #F5BF00;
    }
    .nav_name2{
    font-family: 'Recia';

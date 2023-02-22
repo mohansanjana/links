@@ -1,18 +1,130 @@
 
 <head>
+  <meta charset="utf-8">
   <title class="pagetitle">Cover</title>
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="main.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://api.fontshare.com/v2/css?f[]=recia@700,701,300,500,501,600,301,601,401,400&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2&display=swap" rel="stylesheet">
+  <script defer src="arena.js"></script>
 </head>
 
 <body>
+  <section>
+    <a href="https://api.are.na/v2/channels/women-empowerment-and-fashion" id="channel-url">
+      <div class="channel-title"></div> <!-- The channel title will be inserted inside this h1. -->
+    </a>
+    <div class="channel-description"></div> <!-- Same here for the channel description. -->
+    <ul class="channel-owner channel-collaborator"></ul> <!-- Owner and collaborators. -->
+  </section>
+  <section>
+    <!-- All the channel “blocks” will be created as children, here. -->
+    <!-- You could move the classes to different section elements to separate the types! -->
+    <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+    </ul>
+  </section>
+  <template id="image-block">
+    <li>
+      <figure class="image-block">
+        <h3 class="title"></h3>
+        <picture>
+          <source class="image-thumb">
+          <source class="image-square">
+          <source class="image-display">
+          <img class="image">
+        </picture>
+        <a class="link">
+         <!-- <p class="link-title"></p>-->
+        </a>
+        <figcaption class="description"></figcaption>
+       <!-- <p class="time-updated"></p>
+        <p class="time-created"></p> -->
+      </figure>
+    </li>
+  </template>
+  <!-- Links (saved sites). -->
+  <template id="link-block">
+    <li>
+      <figure class="link-block">
+        <h3 class="title"></h3>
+        <picture>
+          <source class="image-thumb">
+          <source class="image-square">
+          <source class="image-display">
+          <img class="image">
+        </picture>
+        <a class="link">
+         <!-- <p class="link-title"></p>-->
+        </a>
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+       <!-- <p class="time-updated"></p>
+        <p class="time-created"></p> -->
+      </figure>
+    </li>
+  </template>
+  <template id="text-block">
+    <li>
+      <figure class="text-block">
+        <h3 class="title"></h3>
+        <div class="content"></div> <!-- Text blocks insert their HTML here. -->
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+      <!-- <p class="time-updated"></p>
+        <p class="time-created"></p> -->
+      </figure>
+    </li>
+  </template>
+  <!-- YouTube, Vimeo, etc. -->
+  <template id="video-embed-block">
+    <li>
+      <figure class="video-embed-block">
+        <h3 class="title"></h3>
+        <picture>
+         <!-- <source class="image-thumb">
+          <source class="image-square">
+          <source class="image-display">
+          <img class="image"> -->
+        </picture>
+        <div class="embed"></div>
+        <a class="link">
+          <!--<p class="link-title"></p>-->
+        </a>
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+        <!-- <p class="time-updated"></p>
+        <p class="time-created"></p> -->
+      </figure>
+    </li>
+  </template>
+  <!-- Uploaded video files. -->
+  <template id="video-file-block">
+    <li>
+      <figure class="video-file-block">
+        <h3 class="title"></h3>
+        <picture>
+         <!-- <source class="image-thumb">
+          <source class="image-square">
+          <source class="image-display">
+          <img class="image">-->
+        </picture>
+        <video class="video" controls></video> <!-- Video source inserts here. -->
+        <figcaption class="description"></figcaption>
+        <p class="type"></p>
+        <!-- <p class="time-updated"></p>
+        <p class="time-created"></p> -->
+      </figure>
+    </li>
+  </template>
 
 <div class="bookcover">
-  <div class="vl"></div>
+  <div class="book-divider"></div>
   <div class="contents">
+    <div class="side1"> 
+  
+      <div></div>
+      </div>
+    </div>
    <div class="projectandname">
       <!-- <div class="project">Women Empowerment</div>
       <div class="name">Fashion</div>

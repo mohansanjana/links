@@ -1,4 +1,7 @@
+
+
 /* VARIABLES */
+
 
 :root {
    --header-height: 3rem;
@@ -10,6 +13,7 @@
    --project: calc(var(--body)*2);
    --name: calc(var(--body)*1);
    --title: calc(var(--body)*14);
+   --gridrow: 2;
 
    /*======= spacing and margins ===== */
    --coverspacing: calc(var(--spacing)2.625);
@@ -33,6 +37,7 @@
    --name: calc(var(--body)*0.8);
    --title: calc(var(--body)*12);
    --titleletter-spacing: -0.12em;
+   --gridrow: 3;
 
    /*======= spacing and margins ===== */
    --spacing: 40px;
@@ -47,7 +52,7 @@ body{
    padding: 0;
    margin: 0;
    background-color: #FFFFFF;
-   overflow: hidden;
+   overflow-y: hidden;
 }
 
 html{
@@ -55,7 +60,36 @@ html{
 }
 
 
+
 /*======= BODY ======= */
+
+.channel-title {
+   font-family: 'General Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   color: #901717;
+   text-decoration: none;
+}
+
+ul {
+flex: none;
+order: 0;
+flex-grow: 0;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 17px;
+}
+
+.title{
+font-family: 'Recia';
+font-style: italic;
+font-weight: 500;
+font-size: 14px;
+color: #EA0000;
+}
 
 .bookcover {
    display: flex;
@@ -122,7 +156,7 @@ color: #FFFFFF;
 
 .title::before,
 .title::after {
-   content: ''; /* Empty. */
+   content: ''; 
 	display: block;
 	visibility: hidden;
 }
@@ -135,7 +169,7 @@ color: #FFFFFF;
    margin-bottom: var(--inset--bottom);
 }
 
-.title{
+/*.title{
   justify-content: center;
   align-items: center;
   position: relative;
@@ -154,13 +188,12 @@ color: #FFFFFF;
    --inset--right: 0.06em;
 	margin-left: var(--inset--left);
 	margin-right: var(--inset--right);
-	width: fit-content; /* Cinch the width. */
-}
-
+	width: fit-content; /* Cinch the width. 
+}*/
 
 
 @media (min-width: 767px) {
-.vl {
+.book-divider {
    border-left: 1px solid #FB4444;
    height: 100vh;
    position: relative;

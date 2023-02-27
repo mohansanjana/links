@@ -39,7 +39,7 @@
 body{
    padding: auto;
    margin:auto;
-   width:70%;
+   width:90%;
    background-color: #FFFFFF;
    overflow-x: hidden;
   
@@ -67,10 +67,9 @@ ul  {
    margin:0;
    padding: 0px;
    gap: 1em;
-   align-items: center;
+   align-items: start;
    filter:drop-shadow(2px 4px 12px rgba(0, 0, 0, 0.13));
    justify-content: center;
-   justify-items: center;
    overflow-x: hidden;
    }
 
@@ -91,7 +90,7 @@ img{
       padding-top: 20px;
       padding-bottom: 50px;
       background: #FFFBE5;
-      width: 40vw;
+      width: 90vw;
       height: fit-content;
       align-items: center;
      
@@ -133,7 +132,7 @@ link{
    }
 
 figure{
-   width: 40vw;
+   width: 60vw;
    height: fit-content;
    margin-inline-end: 0px;
    padding: 0;

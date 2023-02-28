@@ -1,7 +1,7 @@
 :root{
    --bodycopy: 16px;
    --description: 10px;
-   --title: 40px;
+   --title: 43px;
 
 }
 
@@ -25,6 +25,7 @@ ul{
    gap: var(--grid-gap);
    justify-content: center;
    align-items: start;
+   margin-top: 5vh;
 }
 
 .image-block, .link-block, .video-embed-block{
@@ -57,7 +58,7 @@ audio, img, video {
    font-style: normal;
    font-size: var(--title);
    gap: 50vw;
-   margin-bottom: 3em;
+   margin-bottom: 2em;
 }
 
 
@@ -114,7 +115,7 @@ audio, img, video {
       order: 0;
       flex-grow: 0;
       justify-content: space-between;
-      
+      margin-top: 5vh;
    }
 
 .channel-title{
@@ -123,7 +124,7 @@ audio, img, video {
    font-style: normal;
    font-size: var(--title);
    width: 50vw;
-   gap: 50vw;
+   
 }
    
 .media{
@@ -134,8 +135,16 @@ audio, img, video {
       order: 1;
       flex-grow: 0;
       justify-content: space-between;
-      gap: 50vw;
 
+}
+
+.contents{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: nowrap;
+   gap:50vw;
 }
 }
 

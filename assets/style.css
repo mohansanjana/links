@@ -1,6 +1,7 @@
 :root{
    --bodycopy: 16px;
    --description: 10px;
+   --title: 40px;
 
 }
 
@@ -24,7 +25,6 @@ ul{
    gap: var(--grid-gap);
    justify-content: center;
    align-items: start;
-   
 }
 
 .image-block, .link-block, .video-embed-block{
@@ -51,12 +51,27 @@ audio, img, video {
    border-bottom: 1px solid #8f8f8f;
 }
 
+.channel-title{
+   font-family: "scotch-display", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: var(--title);
+   gap: 50vw;
+   margin-bottom: 3em;
+}
+
 
 @media (min-width: 767px) {
+   :root{
+      --bodycopy: 16px;
+      --description: 10px;
+      --title: 100px;
+   }
+
    ul{
       grid-auto-flow: column;
       --rows: 1;
-      --grid-gap: 2em;
+      --grid-gap: 1.5em;
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: repeat(var(--rows), 1fr);;
@@ -66,7 +81,7 @@ audio, img, video {
    }
 
    audio, img, video {
-      max-width: 30vw;
+      max-width: 25vw;
       border-bottom: 1px solid #b5b5b5;
   }
 
@@ -80,18 +95,50 @@ audio, img, video {
 }
 
 
-   .image-block, .link-block, .video-embed-block{
-      padding-right: 40px;
-      padding-top: 40px;
-      padding-bottom: 80px;
-      padding-left: 40px;
-      background-color: #FFFFFF;
-      box-shadow: 2px 4px 12px rgba(166, 166, 166, 0.13);
-      border-radius: 8px;
-      border-bottom: 1px solid #777777;
+.image-block, .link-block, .video-embed-block{
+   padding-right: 40px;
+   padding-top: 40px;
+   padding-bottom: 80px;
+   padding-left: 40px;
+   background-color: #FFFFFF;
+   box-shadow: 2px 4px 12px rgba(166, 166, 166, 0.13);
+   border-radius: 8px;
+   border-bottom: 1px solid #777777;
+}
+
+.channel-title{
+      position: absolute;
+      display: flex;
+      flex-direction: column; 
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      justify-content: space-between;
+      
    }
 
+.channel-title{
+   font-family: "scotch-display", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: var(--title);
+   width: 50vw;
+   gap: 50vw;
 }
+   
+.media{
+      position: relative;
+      display: flex;
+      flex-direction: column; 
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      justify-content: space-between;
+      gap: 50vw;
+
+}
+}
+
 
 
 

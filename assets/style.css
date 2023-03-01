@@ -120,6 +120,18 @@ audio, img, video {
    border-bottom: 1px solid #777777;
 }
 
+.image-block:hover{
+   transform: rotate(7deg);
+}
+
+.link-block:hover{
+   transform: rotate(7deg);
+}
+
+.video-embed-block:hover{
+   transform: rotate(7deg);
+}
+
 .channel-title{
       position: absolute;
       display: flex;

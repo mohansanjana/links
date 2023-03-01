@@ -179,15 +179,15 @@ audio, img, video {
  }
 
  .bloc-icon {
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
-
- .bloc-icon img {
-   width: 60px;
-   height: 60px;
- }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bloc-icon img {
+      width: 60px;
+      height: 60px;
+      border-bottom: none;
+    }
 
 
  @media (min-width: 767px) {

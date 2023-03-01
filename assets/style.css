@@ -65,6 +65,15 @@ audio, img, video {
 }
 
 @media (min-width: 767px) {
+   body{
+      box-sizing: border-box;
+      margin: auto;
+      padding: auto;
+      width: 92%;
+      font-family: 'Recia', serif;
+      background-color: #F2F2F2;
+   }
+
    :root{
       --bodycopy: 16px;
       --description: 10px;

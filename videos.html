@@ -23,55 +23,28 @@
     </a>
   </section>
   <section>
-    <ul class="audio-embed-blocks audio-file-blocks image-blocks embed-blocks link-blocks pdf-blocks text-blocks video-embed-blocks video-file-blocks">
+    <ul class="video-embed-blocks">
     </ul>
   </section>
 
 
   <div class="media">
-  <!-- Images. -->
-  <template id="image-block">
+ <!-- YouTube, Vimeo, etc. -->
+<template id="video-embed-block">
     <li>
-      <figure class="image-block">
+      <figure class="video-embed-block">
         <picture>
           <source class="image-display">
-          <img class="image">
+          <a class="link">
+            <img class="image">
+          </a>
         </picture>
       <p class="time-created"></p>
       </figure>
     </li>
   </template>
-
-<!-- Links (saved sites). -->
-<template id="link-block">
-  <li>
-    <figure class="link-block">
-      <picture>
-        <source class="image-display">
-        <a class="link">
-          <img class="image">
-        </a>
-      </picture>
-    <p class="time-created"></p>
-    </figure>
-  </li>
-</template>
-
-<!-- YouTube, Vimeo, etc. -->
-<template id="video-embed-block">
-  <li>
-    <figure class="video-embed-block">
-      <picture>
-        <source class="image-display">
-        <a class="link">
-          <img class="image">
-        </a>
-      </picture>
-    <p class="time-created"></p>
-    </figure>
-  </li>
-</template>
 </div>
+
 <nav class="mobile-nav">
   <a href="images.html" class="bloc-icon">
       <img src="assets/Group 22.png" alt="">
@@ -83,6 +56,5 @@
       <img src="assets/Group 28.png" alt="">
   </a>
 </nav>
-</div>
 </body>
 </html>
